@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="iconf.ico" type="image/x-icon">
+</head>
+
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0D7377;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(9px);
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 600px;
+}
+
+.card h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.links {
+  background-color: #2A265F;
+  color: #fff;
+  padding: 35px;
+  max-width: 360px;
+}
+
+.links a {
+  color: #fff;
+  display: inline-block;
+  font-size: 19px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  font-size: 22px;
+}
+
+.flutter {
+  font-size: 20px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 10  0px;
+  border-radius: 50%;
+  float: right;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 500px;
+  }
+
+  .card h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .card h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+  }
+
+  .links {
+    background-color: #2A265F;
+    color: #fff;
+    padding: 35px;
+    max-width: 360px;
+  }
+
+  .links a {
+    color: #fff;
+    display: inline-block;
+    font-size: 19px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  .info {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .flutter {
+    font-size: 20px;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 10  0px;
+    border-radius: 50%;
+    float: right;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #0D7377;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 70%;
+    flex-direction: column;
+    margin: 20px;
+    overflow: hidden;
+    width: 420px;
+    text-align: center;
+  }
+
+  .card h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .card h2 {
+    letter-spacing: 1px;
+    margin: 12px 0;
+  }
+
+  .links {
+    background-color: #2A265F;
+    color: #fff;
+    padding: 35px;
+    max-width: 500px;
+    padding-top: 5px;
+  }
+
+  .links a {
+    color: #fff;
+    display: inline-block;
+    font-size: 23px;
+    opacity: 0.8;
+    margin-top: 30px;
+    text-decoration: none;
+    top: 30px;
+  }
+
+  .info {
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .flutter {
+    font-size: 20px;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 120px;
+    height: 10  0px;
+    border-radius: 50%;
+    float: right;
+    position: absolute;
+    top: 45px;
+    right: 32px;
+  }
+}
+</style>
+    <div class="container" align="center">
+        <div class="card">
+            <div class="info">
+
+                <h6>Dev Landing Page</h6>
+                <h2 class="title">Name Here</h2>
+                <img src="https://avatars1.githubusercontent.com/u/48722602?s=460&u=0bfd8f66f5921d4807967930639f31d876cad77c&v=4" style="width: 100px; border-radius: 50%;">
+                <h2 class="flutter">Android Developer</h2>
+                <h2 class="flutter">Any Text</h2>
+                <h2 class="flutter">Your Bio</h2>
+
+            </div>
+            <div class="links">
+
+                <a target="_blank" class="ins" href="#">Instagram</a><br>
+                <a target="_blank" class="ins" href="#">Github</a><br>
+                <a target="_blank" class="ins" href="#">Gmail</a><br>
+                <a target="_blank" class="ins" href="#">Stack Overflow</a><br>
+                <a class="ins" href="#">Blog</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

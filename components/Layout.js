@@ -9,7 +9,6 @@ function Layout({ children }) {
   return (
     <div>
       <Head>
-        <meta charset='utf-8' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
@@ -17,7 +16,7 @@ function Layout({ children }) {
         <meta name='description' content='' />
         <meta name='author' content='' />
         <title>Juni Brosas | Software Developer</title>
-        <link rel='icon' type='image/x-icon' href='assets/img/favicon.ico' />
+        <link rel='icon' type='image/x-icon' href='/favicon.ico' />
         <script
           src='https://use.fontawesome.com/releases/v5.13.0/js/all.js'
           crossorigin='anonymous'

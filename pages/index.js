@@ -1,51 +1,21 @@
 import React from 'react';
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import Navigation from '../components/Navigation';
 
 export default function Home() {
   return (
     <Layout>
-      {/* Navigation */}
-      <nav
-        className='navbar navbar-expand-lg navbar-dark bg-primary fixed-top'
-        id='sideNav'
-      >
-        <a className='navbar-brand js-scroll-trigger' href='#page-top'>
-          <span className='d-block d-lg-none'>Juni Brosas</span>
-          <span className='d-none d-lg-block'>
-            <img
-              className='img-fluid img-profile rounded-circle mx-auto mb-2'
-              src='/images/profile.jpg'
-              alt=''
-            />
-          </span>
-        </a>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarSupportedContent'
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul className='navbar-nav'>
-            <li className='nav-item'>
-              <a className='nav-link js-scroll-trigger' href='#about'>
-                About
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      {/* Page Content */}
-      <div className='container-fluid p-0'>
-        {/* About */}
+      <div className='container p-0 text-center'>
         <section className='resume-section' id='about'>
           <div className='resume-section-content'>
+            <div className='d-none d-lg-block'>
+              <img
+                className='img-fluid img-profile rounded-circle mx-auto mb-2'
+                src='/images/profile.jpg'
+                alt='Juni Brosas'
+              />
+            </div>
             <h1 className='mb-0'>
               Juni {` `}
               <span className='text-primary'>Brosas</span>
@@ -80,6 +50,57 @@ export default function Home() {
                 <i className='fab fa-github'></i>
               </a>
             </div>
+          </div>
+        </section>
+        <hr class='m-0' />
+        <section class='resume-section' id='skills'>
+          <div class='resume-section-content'>
+            <h2 className='mb-5'>Skills</h2>
+            <div className='subheading mb-3'>Programming Languages & Tools</div>
+            <ul className='list-inline dev-icons'>
+              <li className='list-inline-item'>
+                <img
+                  src='/images/skills/logo-reactjs.png'
+                  alt='ReactJS'
+                  title='ReactJS'
+                />
+              </li>
+              <li className='list-inline-item'>
+                <img
+                  src='/images/skills/logo-nextjs.png'
+                  alt='NextJS'
+                  title='NextJS'
+                />
+              </li>
+              <li className='list-inline-item'>
+                <img
+                  src='/images/skills/logo-nodejs.png'
+                  alt='NodeJS'
+                  title='NodeJS'
+                />
+              </li>
+              <li className='list-inline-item'>
+                <img
+                  src='/images/skills/logo-mongodb.png'
+                  alt='MongoDB'
+                  title='MongoDB'
+                />
+              </li>
+              <li className='list-inline-item'>
+                <img
+                  src='/images/skills/logo-graphql.png'
+                  alt='GraphQL'
+                  title='GraphQL'
+                />
+              </li>
+              <li className='list-inline-item'>
+                <img
+                  src='/images/skills/logo-docker.png'
+                  alt='Docker'
+                  title='Docker'
+                />
+              </li>
+            </ul>
           </div>
         </section>
       </div>
